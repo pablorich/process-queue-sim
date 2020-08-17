@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es" >
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Procesos V6</title>
+  </head>
+  <body>
+    <form id="formulario" onsubmit="return false">
+      <div class="formDivider" id="campos">
+        <div class="half">
+          <label for="cantidad">Cantidad de programas</label>
+          <input id="cantidad" autofocus type="number">
+        </div>
+        <div class="half">
+          <label for="quantum">Tamaño del quantum</label>
+          <input id="quantum" type="number">
+        </div>
+      </div>
+      <div id="botones">
+        <div id="campos">
+          <div class="half">
+            <button type="submit" id="agregar">AGREGAR PROGRAMAS</button>
+          </div>
+          <div class="half">
+            <button type="submit" id="start">COMENZAR</button>
+          </div>
+        </div>
+      </div>
+      <p id="errores"></p>
+    </form>
+
+    <div class="cajaEjecucionCont">
+      <p id="procesoActual">Proceso en ejecucion:&darr;</p>
+      <div id="ejecutando" class="cajaEjecucion ejec"></div>
+    </div>
+
+    <div id="titulos">
+      <div>
+        <p id="estadoText">Programas en espera: </p><p id="estado">-</p>
+      </div>
+      <div>
+        <p id="TGlobalText">Tiempo global: </p><p id="tGlobal">-</p>
+      </div>
+      <div>
+        <p id="quantumText">Quantum: </p><p id="quantumValue">-</p>
+      </div>
+    </div>
+
+    <div id="cajaMemoria">
+      <!-- Aqui van los cubitos -->
+    </div>
+
+      <div id="cajas">
+        <div class="cajaCont">
+          <p id="procNuevos">Procesos nuevos:&darr;</p>
+          <div id="nuevosCont" class="caja nuevo">
+            <ul id="nuevos"></ul>
+          </div>
+        </div>
+        <div id="cajasEncerradas">
+          <div class="cajaEncerradaCont">
+            <p id="listos">Procesos listos:&darr;</p>
+            <div id="listaCont" class="caja listo">
+              <ul id="lista"></ul>
+            </div>
+          </div>
+          <div class="cajaEncerradaCont">
+            <p id="procesosBloqueados">Procesos bloqueados:&darr;</p>
+            <div id="bloqueadosCont" class="bloqueado caja">
+              <ul id="bloqueados"></ul>
+            </div>
+          </div>
+          <div class="cajaEncerradaGrande" id="tablaProcCont"></div>
+        </div>
+        <div class="cajaCont">
+          <p id="terminado">Procesos terminados:&darr;</p>
+          <div id="progTerminadosCont" class="terminado caja">
+            <ul id="progTerminados"></ul>
+          </div>
+        </div>
+      </div>
+
+    <script type="text/javascript" src="js/main.js">
+
+    </script>
+  </body>
+</html>

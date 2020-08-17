@@ -1,0 +1,224 @@
+* {
+    box-sizing: border-box;
+}
+
+p{
+    margin: 10px 0;
+}
+
+label{
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+input{
+  margin-bottom: 10px;
+}
+
+#cajas{
+  width: 100%;
+  vertical-align: top;
+  /* margin-bottom: 10px; */
+}
+
+#cajasEncerradas{
+  vertical-align: top;
+  display: inline-block;
+  width: 49%;
+}
+
+#cajaMemoria{
+    vertical-align: top;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+}
+
+#cajaMemoria p{
+    vertical-align: top;
+    display: inline-block;
+    margin: 5px 0 0 5px;
+    padding: 5px;
+}
+
+#formulario{
+  width: 300px;
+  display: inline-block;
+  margin: 50px 0 0 20px;
+}
+
+#agregar{
+  display: block;
+  margin-bottom: 10px;
+}
+
+#campos{
+  width: 400px;
+}
+
+#titulos{
+  vertical-align: top;
+  display: inline-block;
+  margin: 50px 0 0 100px;
+}
+
+#estadoText{
+  display: inline;
+}
+
+#TGlobalText{
+  display: inline;
+}
+
+#quantumText{
+  display: inline;
+}
+
+#estado{
+  display: inline;
+}
+
+#tGlobal{
+  display: inline-block;
+}
+
+#quantumValue{
+  display: inline;
+}
+
+.formDivider{
+  margin-bottom: 10px;
+}
+
+.cajaEjecucionCont{
+  vertical-align: top;
+  display: inline-block;
+  min-width: 15%;
+  margin-left: 15%;
+}
+
+.cajaCont{
+  vertical-align: top;
+  display: inline-block;
+  width: 25%;
+}
+
+.cajaEncerradaCont{
+  vertical-align: top;
+  display: inline-block;
+  width: 49.5%;//Por los borders de las cajas
+}
+
+.cajaEncerradaGrande ul{
+  padding-left: 20px;
+}
+
+.cajaEncerradaGrande li{
+  display: inline-grid;
+  width: 49%;
+  margin-right: 5px;
+  border-bottom: solid thin;
+}
+
+.cajaEjecucion{
+  display: inline-block;
+  width: 100%;
+  border-radius: 5px;
+  border-style: dotted;
+  border-width: thin;
+  margin: 0px;
+  width: 100%;
+  min-height: 200px;
+}
+
+.caja{
+  display: inline-block;
+  width: 100%;
+  min-height: 330px;
+  border-radius: 5px;
+  border-style: groove;
+  border-width: thin;
+  margin: 0px;
+}
+
+.half{
+  display: inline-block;
+  width: 45%;
+}
+
+.ejec{
+  border-color: #45ce27 !important;
+}
+
+.nuevo{
+  border-color: #79d3d8 !important;
+}
+
+.listo{
+  border-color: #e4e58b !important;
+}
+
+.bloqueado{
+  border-color: #b879d8 !important;
+}
+
+.terminado{
+  border-color: coral !important;
+}
+
+.marcoContenido{
+    display: block;
+    vertical-align: top;
+    text-align: left;
+    margin: 2px;
+    width: 33px;
+    height: 39px;
+    border-style: inset;
+    border-width: thin;
+}
+
+.cargado{
+  background-color: #4fa6f2;
+  display: inline-block;
+  vertical-align: top;
+  width: 50%;
+  height: 50%;
+}
+
+.vacio{
+  background-color: #e3e5ce;
+  display: inline-block;
+  vertical-align: top;
+  width: 50%;
+  height: 50%;
+}
+
+.locked{
+  background-color: #b978d8;
+  display: inline-block;
+  vertical-align: top;
+  width: 50%;
+  height: 50%;
+}
+
+.ejecutando{
+  background-color: #d60a55;
+  display: inline-block;
+  vertical-align: top;
+  width: 50%;
+  height: 50%;
+}
+
+.sistema{
+  background-color: black;
+  display: inline-block;
+  vertical-align: top;
+  width: 50%;
+  height: 50%;
+}
+
+.marco{
+    display: inline-block;
+    vertical-align: top;
+}
